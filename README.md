@@ -1,22 +1,6 @@
-Skip to content
-Projects
-Groups
-More
 
-U
-UCLA-Coding-Boot-Camp
-UCLAWES201802FSF3-Class-Repository-FSF
-Repository
-master
-UCLAWES201802FSF3-Class-Repository-FSF   Homework   Week-14   homework_instructions.md
- 
-Aaron Farber's avatar
-message
-Aaron Farber authored 2 days ago
-0462bd93
- homework_instructions.md 7.56 KB
-  
 Node Express Handlebars
+
 Overview
 In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
