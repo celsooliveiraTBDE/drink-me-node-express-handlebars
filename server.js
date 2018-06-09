@@ -12,6 +12,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // parse application/json
+
 app.use(bodyParser.json());
 
 // Set Handlebars.

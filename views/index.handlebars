@@ -1,79 +1,90 @@
 <section class="section">
   <div class="container">
-      <h1 class="title">
+    <h1 class="title is-1">
       Drink with Me!
     </h1>
-    <p class="subtitle">
+    <p class="subtitle is-3">
       My first website with
       <strong>Drink Me</strong>
     </p>
-    </div>
-</section>
-<section class="section">
-<div class="columns">
-  <div class="column is-half">
-    <h2>Drink Orders</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>
-            <abbr title="Drink Name">Drink Name</abbr>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>
-            {{#each drinks}} {{#unless sipped}} {{> drinks/drink-block sipped=true}} {{/unless}} {{/each}}
-          </th>
-        </tr>
-      </tbody>
-    </table>
   </div>
-  <div class="column">
-    <h2>Sipped on Drinks</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>
-            <abbr title="Drink Name">Name</abbr>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>
-            
+</section>
+<hr class="hr" style="margin-bottom: 0;">
+<section class="section">
+  <div class="columns">
+    <div class="column is-half">
+      <h2 class="title is-2">Drink Orders</h2>
+      <table class="table is-narrow is-hoverable">
+        <thead>
+          <tr>
+            <th>
+              <abbr title="Drink Name">Drink Name</abbr>
+            </th>
+            <th>
+              <abbr title="Drink It">Drink It</abbr>
+            </th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              {{#each drinks}} {{#unless sipped}} {{> drinks/drink-block sipped=true}} {{/unless}} {{/each}}
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="column">
+      <h2 class="title is-2">Sipped on Drinks</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              <abbr title="Drink Name">Drink Name</abbr>
+            </th>
+            <th>
+              <abbr title="Drink Again">Drink Again</abbr>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+
               {{#each drinks}} {{#if sipped}} {{> drinks/drink-block sipped=false}} {{/if}} {{/each}}
-  
-          </th>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+            </th>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
 </section>
+<hr class="hr" style="margin-bottom: 0;">
+
 <section class="section">
-  <div class="container">
-  <h2>Add a Drink</h2>
-  <form class="create-form field">
+  <div class="columns">
+    <div class="column is-one-third">
+    <h2 class="title is-2">Add a Drink</h2>
+    <form class="create-form field">
 
-    <div class="form-group control">
-      <label for="ca">Drink Name:</label>
-      <input class="input is-rounded" type="text" placeholder="Rounded input" id="ca" name="name">
-    </div>
+      <div class="form-group control">
+        <label class="label"for="ca">Drink Name:</label>
+        <input class="input is-rounded is-one-third" type="text" placeholder="Rounded input" id="ca" name="name">
+      </div>
 
-    <div class="form-group control">
-      <label for="sipped">Thirsty?</label>
-      <br>
-      <input class="radio" type="radio" name="sipped" value="1" checked> Sipped!
-      <br>
-      <input class="radio" type="radio" name="sipped" value="0"> Dry
-    </div>
-<div class="form-group control">
-    <button class="button is-primary is-rounded" type="submit">Add Drink</button>
- </div>
-  </form>
+      <div class="form-group control">
+        <label class="label"for="sipped">Thirsty?</label>
+        <br>
+        <input class="radio" type="radio" name="sipped" value="1" checked> Sipped!
+        <br>
+        <input class="radio" type="radio" name="sipped" value="0"> Dry
+      </div>
+      <div class="form-group control">
+        <button class="button is-primary is-rounded" type="submit">Add Drink</button>
+      </div>
+    </form>
   </div>
-
+</div>
 </section>
